@@ -1,0 +1,7 @@
+{
+  "model_type": "mbart",
+  "direction": "en_ne",
+  "bleu": 30.264222622474968,
+  "chrf++": 62.36401314010911,
+  "length_ratio": 0.8867560838486868
+}

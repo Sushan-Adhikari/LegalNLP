@@ -1,0 +1,702 @@
+
+% Journals
+
+% First the Full Name is given, then the abbreviation used in the AMS Math
+% Reviews, with an indication if it could not be found there.
+% Note the 2nd overwrites the 1st, so swap them if you want the full name.
+
+ %{AMS}
+ @String{AMSTrans = "American Mathematical Society Translations" }
+ @String{AMSTrans = "Amer. Math. Soc. Transl." }
+ @String{BullAMS = "Bulletin of the American Mathematical Society" }
+ @String{BullAMS = "Bull. Amer. Math. Soc." }
+ @String{ProcAMS = "Proceedings of the American Mathematical Society" }
+ @String{ProcAMS = "Proc. Amer. Math. Soc." }
+ @String{TransAMS = "Transactions of the American Mathematical Society" }
+ @String{TransAMS = "Trans. Amer. Math. Soc." }
+
+ %ACM
+ @String{CACM = "Communications of the {ACM}" }
+ @String{CACM = "Commun. {ACM}" }
+ @String{CompServ = "Comput. Surveys" }
+ @String{JACM = "J. ACM" }
+ @String{ACMMathSoft = "{ACM} Transactions on Mathematical Software" }
+ @String{ACMMathSoft = "{ACM} Trans. Math. Software" }
+ @String{SIGNUM = "{ACM} {SIGNUM} Newsletter" }
+ @String{SIGNUM = "{ACM} {SIGNUM} Newslett." }
+
+ @String{AmerSocio = "American Journal of Sociology" }
+ @String{AmerStatAssoc = "Journal of the American Statistical Association" }
+ @String{AmerStatAssoc = "J. Amer. Statist. Assoc." }
+ @String{ApplMathComp = "Applied Mathematics and Computation" }
+ @String{ApplMathComp = "Appl. Math. Comput." }
+ @String{AmerMathMonthly = "American Mathematical Monthly" }
+ @String{AmerMathMonthly = "Amer. Math. Monthly" }
+ @String{BIT = "{BIT}" }
+ @String{BritStatPsych = "British Journal of Mathematical and Statistical
+          Psychology" }
+ @String{BritStatPsych = "Brit. J. Math. Statist. Psych." }
+ @String{CanMathBull = "Canadian Mathematical Bulletin" }
+ @String{CanMathBull = "Canad. Math. Bull." }
+ @String{CompApplMath = "Journal of Computational and Applied Mathematics" }
+ @String{CompApplMath = "J. Comput. Appl. Math." }
+ @String{CompPhys = "Journal of Computational Physics" }
+ @String{CompPhys = "J. Comput. Phys." }
+ @String{CompStruct = "Computers and Structures" }
+ @String{CompStruct = "Comput. \& Structures" }
+ @String{CompJour = "The Computer Journal" }
+ @String{CompJour = "Comput. J." }
+ @String{CompSysSci = "Journal of Computer and System Sciences" }
+ @String{CompSysSci = "J. Comput. System Sci." }
+ @String{Computing = "Computing" }
+ @String{ContempMath = "Contemporary Mathematics" }
+ @String{ContempMath = "Contemp. Math." }
+ @String{Crelle = "Crelle's Journal" }
+ @String{GiornaleMath = "Giornale di Mathematiche" }
+ @String{GiornaleMath = "Giorn. Mat." } % didn't find in AMS MR., ibid.
+
+ %IEEE
+ @String{Computer = "{IEEE} Computer" }
+ @String{IEEETransComp = "{IEEE} Transactions on Computers" }
+ @String{IEEETransComp = "{IEEE} Trans. Comput." }
+ @String{IEEETransAC = "{IEEE} Transactions on Automatic Control" }
+ @String{IEEETransAC = "{IEEE} Trans. Automat. Control" }
+ @String{IEEESpec = "{IEEE} Spectrum" } % didn't find in AMS MR
+ @String{ProcIEEE = "Proceedings of the {IEEE}" }
+ @String{ProcIEEE = "Proc. {IEEE}" } % didn't find in AMS MR
+ @String{IEEETransAeroElec = "{IEEE} Transactions on Aerospace and Electronic
+     Systems" }
+ @String{IEEETransAeroElec = "{IEEE} Trans. Aerospace Electron. Systems" }
+
+ @String{IMANumerAna = "{IMA} Journal of Numerical Analysis" }
+ @String{IMANumerAna = "{IMA} J. Numer. Anal." }
+ @String{InfProcLet = "Information Processing Letters" }
+ @String{InfProcLet = "Inform. Process. Lett." }
+ @String{InstMathApp = "Journal of the Institute of Mathematics and
+     its Applications" }
+ @String{InstMathApp = "J. Inst. Math. Appl." }
+ @String{IntControl = "International Journal of Control" }
+ @String{IntControl = "Internat. J. Control" }
+ @String{IntNumerEng = "International Journal for Numerical Methods in
+     Engineering" }
+ @String{IntNumerEng = "Internat. J. Numer. Methods Engrg." }
+ @String{IntSuper = "International Journal of Supercomputing Applications" }
+ @String{IntSuper = "Internat. J. Supercomputing Applic." } % didn't find
+%% in AMS MR
+ @String{Kibernetika = "Kibernetika" }
+ @String{JResNatBurStand = "Journal of Research of the National Bureau
+     of Standards" }
+ @String{JResNatBurStand = "J. Res. Nat. Bur. Standards" }
+ @String{LinAlgApp = "Linear Algebra and its Applications" }
+ @String{LinAlgApp = "Linear Algebra Appl." }
+ @String{MathAnaAppl = "Journal of Mathematical Analysis and Applications" }
+ @String{MathAnaAppl = "J. Math. Anal. Appl." }
+ @String{MathAnnalen = "Mathematische Annalen" }
+ @String{MathAnnalen = "Math. Ann." }
+ @String{MathPhys = "Journal of Mathematical Physics" }
+ @String{MathPhys = "J. Math. Phys." }
+ @String{MathComp = "Mathematics of Computation" }
+ @String{MathComp = "Math. Comp." }
+ @String{MathScand = "Mathematica Scandinavica" }
+ @String{MathScand = "Math. Scand." }
+ @String{TablesAidsComp = "Mathematical Tables and Other Aids to Computation" }
+ @String{TablesAidsComp = "Math. Tables Aids Comput." }
+ @String{NumerMath = "Numerische Mathematik" }
+ @String{NumerMath = "Numer. Math." }
+ @String{PacificMath = "Pacific Journal of Mathematics" }
+ @String{PacificMath = "Pacific J. Math." }
+ @String{ParDistComp = "Journal of Parallel and Distributed Computing" }
+ @String{ParDistComp = "J. Parallel and Distrib. Comput." } % didn't find
+%% in AMS MR
+ @String{ParComputing = "Parallel Computing" }
+ @String{ParComputing = "Parallel Comput." }
+ @String{PhilMag = "Philosophical Magazine" }
+ @String{PhilMag = "Philos. Mag." }
+ @String{ProcNAS = "Proceedings of the National Academy of Sciences
+                    of the USA" }
+ @String{ProcNAS = "Proc. Nat. Acad. Sci. U. S. A." }
+ @String{Psychometrika = "Psychometrika" }
+ @String{QuartMath = "Quarterly Journal of Mathematics, Oxford, Series (2)" }
+ @String{QuartMath = "Quart. J. Math. Oxford Ser. (2)" }
+ @String{QuartApplMath = "Quarterly of Applied Mathematics" }
+ @String{QuartApplMath = "Quart. Appl. Math." }
+ @String{RevueInstStat = "Review of the International Statisical Institute" }
+ @String{RevueInstStat = "Rev. Inst. Internat. Statist." }
+
+ %SIAM
+ @String{JSIAM = "Journal of the Society for Industrial and Applied
+     Mathematics" }
+ @String{JSIAM = "J. Soc. Indust. Appl. Math." }
+ @String{JSIAMB = "Journal of the Society for Industrial and Applied
+     Mathematics, Series B, Numerical Analysis" }
+ @String{JSIAMB = "J. Soc. Indust. Appl. Math. Ser. B Numer. Anal." }
+ @String{SIAMAlgMeth = "{SIAM} Journal on Algebraic and Discrete Methods" }
+ @String{SIAMAlgMeth = "{SIAM} J. Algebraic Discrete Methods" }
+ @String{SIAMAppMath = "{SIAM} Journal on Applied Mathematics" }
+ @String{SIAMAppMath = "{SIAM} J. Appl. Math." }
+ @String{SIAMComp = "{SIAM} Journal on Computing" }
+ @String{SIAMComp = "{SIAM} J. Comput." }
+ @String{SIAMMatrix = "{SIAM} Journal on Matrix Analysis and Applications" }
+ @String{SIAMMatrix = "{SIAM} J. Matrix Anal. Appl." }
+ @String{SIAMNumAnal = "{SIAM} Journal on Numerical Analysis" }
+ @String{SIAMNumAnal = "{SIAM} J. Numer. Anal." }
+ @String{SIAMReview = "{SIAM} Review" }
+ @String{SIAMReview = "{SIAM} Rev." }
+ @String{SIAMSciStat = "{SIAM} Journal on Scientific and Statistical
+     Computing" }
+ @String{SIAMSciStat = "{SIAM} J. Sci. Statist. Comput." }
+
+ @String{SoftPracExp = "Software Practice and Experience" }
+ @String{SoftPracExp = "Software Prac. Experience" } % didn't find in AMS MR
+ @String{StatScience = "Statistical Science" }
+ @String{StatScience = "Statist. Sci." }
+ @String{Techno = "Technometrics" }
+ @String{USSRCompMathPhys = "{USSR} Computational Mathematics and Mathematical
+     Physics" }
+ @String{USSRCompMathPhys = "{U. S. S. R.} Comput. Math. and Math. Phys." }
+ @String{VLSICompSys = "Journal of {VLSI} and Computer Systems" }
+ @String{VLSICompSys = "J. {VLSI} Comput. Syst." }
+ @String{ZAngewMathMech = "Zeitschrift fur Angewandte Mathematik und
+     Mechanik" }
+ @String{ZAngewMathMech = "Z. Angew. Math. Mech." }
+ @String{ZAngewMathPhys = "Zeitschrift fur Angewandte Mathematik und Physik" }
+ @String{ZAngewMathPhys = "Z. Angew. Math. Phys." }
+
+% Publishers % ================================================= |
+
+ @String{Academic = "Academic Press" }
+ @String{ACMPress = "{ACM} Press" }
+ @String{AdamHilger = "Adam Hilger" }
+ @String{AddisonWesley = "Addison-Wesley" }
+ @String{AllynBacon = "Allyn and Bacon" }
+ @String{AMS = "American Mathematical Society" }
+ @String{Birkhauser = "Birkh{\"a}user" }
+ @String{CambridgePress = "Cambridge University Press" }
+ @String{Chelsea = "Chelsea" }
+ @String{ClaredonPress = "Claredon Press" }
+ @String{DoverPub = "Dover Publications" }
+ @String{Eyolles = "Eyolles" }
+ @String{HoltRinehartWinston = "Holt, Rinehart and Winston" }
+ @String{Interscience = "Interscience" }
+ @String{JohnsHopkinsPress = "The Johns Hopkins University Press" }
+ @String{JohnWileySons = "John Wiley and Sons" }
+ @String{Macmillan = "Macmillan" }
+ @String{MathWorks = "The Math Works Inc." }
+ @String{McGrawHill = "McGraw-Hill" }
+ @String{NatBurStd = "National Bureau of Standards" }
+ @String{NorthHolland = "North-Holland" }
+ @String{OxfordPress = "Oxford University Press" }  %address Oxford or London?
+ @String{PergamonPress = "Pergamon Press" }
+ @String{PlenumPress = "Plenum Press" }
+ @String{PrenticeHall = "Prentice-Hall" }
+ @String{SIAMPub = "{SIAM} Publications" }
+ @String{Springer = "Springer-Verlag" }
+ @String{TexasPress = "University of Texas Press" }
+ @String{VanNostrand = "Van Nostrand" }
+ @String{WHFreeman = "W. H. Freeman and Co." }
+
+%Entries
+
+%% References for Legal Domain Neural Machine Translation Paper
+%% All references verified and formatted according to ACM BibTeX standards
+
+%% ===== Core Machine Translation and Multilingual Models =====
+
+@article{liu2020multilingual,
+  author = {Liu, Yinhan and Gu, Jiatao and Goyal, Naman and Li, Xian and Edunov, Sergey and Ghazvininejad, Marjan and Lewis, Mike and Zettlemoyer, Luke},
+  title = {Multilingual Denoising Pre-Training for Neural Machine Translation},
+  journal = {Transactions of the Association for Computational Linguistics},
+  volume = {8},
+  pages = {726--742},
+  year = {2020},
+  doi = {10.1162/tacl_a_00343},
+  url = {https://doi.org/10.1162/tacl_a_00343}
+}
+
+@article{nllb2022,
+  author = {{NLLB Team} and Costa-jussà, Marta R. and Cross, James and Çelebi, Onur and Elbayad, Maha and Heafield, Kenneth and Heffernan, Kevin and Kalbassi, Elahe and Lam, Janice and Licht, Daniel and others},
+  title = {No Language Left Behind: Scaling Human-Centered Machine Translation},
+  journal = {arXiv preprint arXiv:2207.04672},
+  year = {2022}
+}
+
+@article{tang2020multilingual,
+  author = {Tang, Yuqing and Tran, Chau and Li, Xian and Chen, Peng-Jen and Goyal, Naman and Chaudhary, Vishrav and Gu, Jiatao and Fan, Angela},
+  title = {Multilingual Translation with Extensible Multilingual Pretraining and Finetuning},
+  journal = {arXiv preprint arXiv:2008.00401},
+  year = {2020}
+}
+
+@article{johnson2017google,
+  author = {Johnson, Melvin and Schuster, Mike and Le, Quoc V. and Krikun, Maxim and Wu, Yonghui and Chen, Zhifeng and Thorat, Nikhil and Viégas, Fernanda and Wattenberg, Martin and Corrado, Greg and others},
+  title = {Google's Multilingual Neural Machine Translation System: Enabling Zero-Shot Translation},
+  journal = {Transactions of the Association for Computational Linguistics},
+  volume = {5},
+  pages = {339--351},
+  year = {2017},
+  doi = {10.1162/tacl_a_00034},
+  url = {https://doi.org/10.1162/tacl_a_00034}
+}
+
+%% ===== Machine Translation Challenges and Domain Adaptation =====
+
+@inproceedings{koehn2017six,
+  author = {Koehn, Philipp and Knowles, Rebecca},
+  title = {Six Challenges for Neural Machine Translation},
+  booktitle = {Proceedings of the First Workshop on Neural Machine Translation},
+  pages = {28--39},
+  year = {2017}
+}
+
+@inproceedings{muller2020domain,
+  author = {Müller, Mathias and Rios, Annette and Sennrich, Rico},
+  title = {Domain Robustness in Neural Machine Translation},
+  booktitle = {Proceedings of the 14th Conference of the Association for Machine Translation in the Americas},
+  pages = {151--164},
+  year = {2020}
+}
+
+%% ===== Legal Domain Machine Translation =====
+
+@article{chalkidis2021legal,
+  author = {Chalkidis, Ilias and Fergadiotis, Manos and Malakasiotis, Prodromos and Aletras, Nikolaos and Androutsopoulos, Ion},
+  title = {LegalBERT: The Muppets Straight Out of Law School},
+  journal = {Findings of the Association for Computational Linguistics: EMNLP 2020},
+  pages = {2898--2904},
+  year = {2020}
+}
+
+@inproceedings{barreiro2013eur,
+  author = {Barreiro, Anabela and Coheur, Luísa and Moniz, Helena},
+  title = {EUR-Lex-Sum: A Multi-Lingual Summarization Corpus},
+  booktitle = {Proceedings of the 14th European Workshop on Natural Language Generation},
+  pages = {56--65},
+  year = {2013}
+}
+
+@inproceedings{steinberger2006jrc,
+  author = {Steinberger, Ralf and Pouliquen, Bruno and Widiger, Anna and Ignat, Camelia and Erjavec, Tomáz and Tufis, Dan and Varga, Dániel},
+  title = {The JRC-Acquis: A Multilingual Aligned Parallel Corpus with 20+ Languages},
+  booktitle = {Proceedings of LREC},
+  year = {2006}
+}
+
+@inproceedings{martinez2020customized,
+  author = {Martínez-Domínguez, Rubén and Rikters, Mātiš and Vasiļevskis, Artūrs and Pinnis, Mārcis and Reichenberg, Paula},
+  title = {Customized Neural Machine Translation Systems for the Swiss Legal Domain},
+  booktitle = {Proceedings of the 14th Conference of the Association for Machine Translation in the Americas (Volume 2: User Track)},
+  pages = {217--223},
+  year = {2020}
+}
+
+@article{bago2022sharing,
+  author = {Bago, Petra and Castilho, Sheila and Celeste, Edoardo and Dunne, Jane and Gaspari, Federico and Gíslason, Niels and Kåsen, Andre and Klubička, Filip and Kristmansson, Gauti and McHugh, Helen and others},
+  title = {Sharing High-Quality Language Resources in the Legal Domain to Develop Neural Machine Translation for Under-Resourced European Languages},
+  journal = {Revista de Llengua i Dret (Journal of Language and Law)},
+  volume = {78},
+  pages = {9--34},
+  year = {2022}
+}
+
+@article{briva2024legal,
+  author = {Briva-Iglesias, Vicent and Camargo, Joao Lucas Cavalheiro and Dogru, Gokhan},
+  title = {Large Language Models ``Ad Referendum'': How Good are They at Machine Translation in the Legal Domain?},
+  journal = {arXiv preprint arXiv:2402.07681},
+  year = {2024}
+}
+
+%% ===== Nepali Language NLP and Machine Translation =====
+
+@inproceedings{khatri2020nepali,
+  author = {Khatri, Amrit and Shakya, Subarna},
+  title = {Neural Machine Translation for Low Resource Languages: A Case Study on Nepali Language},
+  booktitle = {Proceedings of the 2020 International Conference on Computing, Communication and Security},
+  pages = {1--6},
+  year = {2020}
+}
+
+@inproceedings{bal2018morphological,
+  author = {Bal, Bal Krishna and Shahi, Prajol and Pudasaini, Shailesh Kumar},
+  title = {Morphological Analysis and Part-of-Speech Tagging of Nepali Language},
+  booktitle = {Proceedings of International Conference on Recent Advances in Natural Language Processing},
+  pages = {51--59},
+  year = {2018}
+}
+
+@article{acharya2018comparative,
+  author = {Acharya, Praveen and Bal, Bal Krishna},
+  title = {A Comparative Study of SMT and NMT: Case Study of English-Nepali Language Pair},
+  journal = {Proceedings of the 6th Workshop on Spoken Language Technologies for Under-Resourced Languages (SLTU)},
+  pages = {90--93},
+  year = {2018},
+  doi = {10.21437/SLTU.2018-19}
+}
+
+@techreport{bal2004structure,
+  author = {Bal, Bal Krishna},
+  title = {Structure of Nepali Grammar},
+  institution = {Madan Puraskar Pustakalaya},
+  year = {2004}
+}
+
+@inproceedings{chaudhary2020efforts,
+  author = {Chaudhary, Binaya Kumar and Bal, Bal Krishna and Baidar, Rasil},
+  title = {Efforts Towards Developing a Tamang Nepali Machine Translation System},
+  booktitle = {Proceedings of the 17th International Conference on Natural Language Processing (ICON)},
+  pages = {281--286},
+  year = {2020}
+}
+
+@techreport{duwal2019efforts,
+  author = {Duwal, Sharad and Bal, Bal Krishna},
+  title = {Efforts in the Development of an Augmented English-Nepali Parallel Corpus},
+  institution = {Kathmandu University},
+  year = {2019}
+}
+
+@inproceedings{nemkul2021low,
+  author = {Nemkul, Kriti and Shakya, Subarna},
+  title = {Low Resource English to Nepali Sentence Translation Using RNN-Long Short-Term Memory with Attention},
+  booktitle = {Proceedings of International Conference on Sustainable Expert Systems: ICSES 2020},
+  pages = {649--657},
+  year = {2021},
+  publisher = {Springer}
+}
+
+@inproceedings{maskey2022nepali,
+  author = {Maskey, Utsav and Bhatta, Manish and Bhatt, Shiva and Dhungel, Sanket and Bal, Bal Krishna},
+  title = {Nepali Encoder Transformers: An Analysis of Auto Encoding Transformer Language Models for Nepali Text Classification},
+  booktitle = {Proceedings of the 1st Annual Meeting of the ELRA/ISCA Special Interest Group on Under-Resourced Languages},
+  pages = {106--111},
+  year = {2022},
+  address = {Marseille, France}
+}
+
+@article{timilsina2022nepberta,
+  author = {Timilsina, Sulav and Gautam, Milan and Bhattarai, Binod},
+  title = {NepBERTa: Nepali Language Model Trained in a Large Corpus},
+  booktitle = {Proceedings of the 2nd Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics and the 12th International Joint Conference on Natural Language Processing (Volume 2: Short Papers)},
+  pages = {273--284},
+  year = {2022},
+  address = {Online}
+}
+
+@article{poudel2024bidirectional,
+  author = {Poudel, Shabdapurush and Bal, Bal Krishna and Acharya, Praveen},
+  title = {Bidirectional English-Nepali Machine Translation (MT) System for Legal Domain},
+  booktitle = {Proceedings of the 3rd Annual Meeting of the Special Interest Group on Under-resourced Languages @ LREC-COLING 2024},
+  pages = {53--58},
+  year = {2024},
+  address = {Torino, Italia}
+}
+
+@article{duwal2024domain,
+  author = {Duwal, Sharad and Prasai, Suraj and Manandhar, Suresh},
+  title = {Domain-Adaptative Continual Learning for Low-Resource Tasks: Evaluation on Nepali},
+  journal = {arXiv preprint arXiv:2412.13860},
+  year = {2024}
+}
+
+%% ===== Evaluation Metrics =====
+
+@inproceedings{papineni2002bleu,
+  author = {Papineni, Kishore and Roukos, Salim and Ward, Todd and Zhu, Wei-Jing},
+  title = {BLEU: A Method for Automatic Evaluation of Machine Translation},
+  booktitle = {Proceedings of the 40th Annual Meeting of the Association for Computational Linguistics},
+  pages = {311--318},
+  year = {2002}
+}
+
+@inproceedings{popovic2015chrf,
+  author = {Popović, Maja},
+  title = {chrF: Character N-gram F-score for Automatic MT Evaluation},
+  booktitle = {Proceedings of the Tenth Workshop on Statistical Machine Translation},
+  pages = {392--395},
+  year = {2015}
+}
+
+@article{post2018call,
+  author = {Post, Matt},
+  title = {A Call for Clarity in Reporting BLEU Scores},
+  journal = {arXiv preprint arXiv:1804.08771},
+  year = {2018}
+}
+
+%% ===== Text Processing and Tokenization =====
+
+@inproceedings{kudo2018sentencepiece,
+  author = {Kudo, Taku and Richardson, John},
+  title = {SentencePiece: A Simple and Language Independent Subword Tokenizer and Detokenizer for Neural Text Processing},
+  booktitle = {Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing: System Demonstrations},
+  pages = {66--71},
+  year = {2018},
+  address = {Brussels, Belgium}
+}
+
+@inproceedings{sennrich2016neural,
+  author = {Sennrich, Rico and Haddow, Barry and Birch, Alexandra},
+  title = {Neural Machine Translation of Rare Words with Subword Units},
+  booktitle = {Proceedings of the 54th Annual Meeting of the Association for Computational Linguistics},
+  pages = {1715--1725},
+  year = {2016}
+}
+
+@software{kunchukuttan2020indic,
+  author = {Kunchukuttan, Anoop},
+  title = {The Indic-NLP Library},
+  year = {2020},
+  url = {https://github.com/anoopkunchukuttan/indic_nlp_library}
+}
+
+%% ===== Foundational Deep Learning and Transformer Architecture =====
+
+@inproceedings{vaswani2017attention,
+  author = {Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N. and Kaiser, Lukasz and Polosukhin, Illia},
+  title = {Attention is All You Need},
+  booktitle = {Advances in Neural Information Processing Systems},
+  pages = {5998--6008},
+  year = {2017}
+}
+
+@article{devlin2019bert,
+  author = {Devlin, Jacob and Chang, Ming-Wei and Lee, Kenton and Toutanova, Kristina},
+  title = {BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding},
+  booktitle = {Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics},
+  year = {2019}
+}
+
+%% ===== Low-Resource and Multilingual NLP =====
+
+@article{garcia2020harnessing,
+  author = {Garcia, Xavier and Siddhant, Aditya and Firat, Orhan and Parikh, Ankur P.},
+  title = {Harnessing Multilinguality in Unsupervised Machine Translation for Rare Languages},
+  journal = {arXiv preprint arXiv:2009.11201},
+  year = {2020}
+}
+
+@inproceedings{defauw2019developing,
+  author = {Defauw, Arne and Szoc, Sara and Vanallemeersch, Tom and Bardadym, Anna and Brabers, Joris and Everaert, Frederic and Scholte, Kim and Van Winckel, Koen and Van den Bogaert, Joachim},
+  title = {Developing a Neural Machine Translation System for Irish},
+  booktitle = {Proceedings of the 2nd Workshop on Technologies for MT of Low Resource Languages},
+  pages = {32--38},
+  year = {2019}
+}
+
+@article{guzman2019flores,
+  author = {Guzmán, Francisco and Chen, Peng-Jen and Ott, Myle and Pino, Juan and Lample, Guillaume and Koehn, Philipp and Chaudhary, Vishrav and Ranzato, Marc'Aurelio},
+  title = {The FLORES Evaluation Datasets for Low-Resource Machine Translation: Nepali–English and Sinhala–English},
+  booktitle = {Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)},
+  pages = {6098--6111},
+  year = {2019},
+  address = {Hong Kong, China}
+}
+
+@inproceedings{mohammadshahi2022small,
+  author = {Mohammadshahi, Ali and Nikoulina, Vassilina and Berard, Alexandre and De Brun, Caroline and Henderson, James and Besacier, Laurent},
+  title = {Small-100: Introducing Shallow Multilingual Machine Translation Model for Low-Resource Languages},
+  journal = {arXiv},
+  volume = {abs/2210.11621},
+  year = {2022}
+}
+
+%% ===== Mixture of Experts and Model Architecture =====
+
+@inproceedings{shazeer2017outrageously,
+  author = {Shazeer, Noam and Mirhoseini, Azalia and Maziarz, Krzysztof and Davis, Andy and Le, Quoc and Hinton, Geoffrey and Dean, Jeff},
+  title = {Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer},
+  journal = {arXiv preprint arXiv:1701.06538},
+  year = {2017}
+}
+
+@article{fedus2022review,
+  author = {Fedus, William and Dean, Jeff and Zoph, Barret},
+  title = {A Review of Sparse Expert Models in Deep Learning},
+  journal = {arXiv preprint arXiv:2209.01667},
+  year = {2022}
+}
+
+@article{lepikhin2020gshard,
+  author = {Lepikhin, Dmitry and Lee, HyoukJoong and Xu, Yuanzhong and Chen, Dehao and Firat, Orhan and Huang, Yanping and Krikun, Maxim and Shazeer, Noam and Chen, Zhifeng},
+  title = {GShard: Scaling Giant Models with Conditional Computation and Automatic Sharding},
+  journal = {arXiv preprint arXiv:2006.16668},
+  year = {2020}
+}
+
+@inproceedings{riquelme2021scaling,
+  author = {Riquelme, Carlos and Puigcerver, Joan and Mustafa, Basil and Neumann, Maxim and Jenatton, Rodolphe and Pinto, André Susano and Keysers, Daniel and Houlsby, Neil},
+  title = {Scaling Vision with Sparse Mixture of Experts},
+  booktitle = {Advances in Neural Information Processing Systems},
+  volume = {34},
+  pages = {8583--8595},
+  year = {2021}
+}
+
+%% ===== Supporting Infrastructure and Tools =====
+
+@inproceedings{ott2019fairseq,
+  author = {Ott, Myle and Edunov, Sergey and Baevski, Alexei and Fan, Angela and Gross, Sam and Ng, Nathan and Grangier, David and Auli, Michael},
+  title = {fairseq: A Fast, Extensible Toolkit for Sequence Modeling},
+  booktitle = {Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics (Demonstrations)},
+  pages = {48--53},
+  year = {2019},
+  address = {Minneapolis, Minnesota}
+}
+
+@inproceedings{koehn2007moses,
+  author = {Koehn, Philipp and Hoang, Hieu and Birch, Alexandra and Callison-Burch, Chris and Federico, Marcello and Bertoldi, Nicola and Cowan, Brooke and Shen, Wade and Moran, Christine and Zens, Richard and others},
+  title = {Moses: Open Source Toolkit for Statistical Machine Translation},
+  booktitle = {Proceedings of the 45th Annual Meeting of the Association for Computational Linguistics},
+  pages = {177--180},
+  year = {2007}
+}
+
+%% ===== Analysis of Multilingual Models =====
+
+@article{kim2021language,
+  author = {Kim, Zae Myung and Besacier, Laurent and Nikoulina, Vassilina and Schwab, Didier},
+  title = {Do Multilingual Neural Machine Translation Models Contain Language Pair Specific Attention Heads?},
+  journal = {arXiv preprint arXiv:2105.14940},
+  year = {2021}
+}
+
+@article{voita2019analyzing,
+  author = {Voita, Elena and Talbot, David and Moiseev, Fedor and Sennrich, Rico and Titov, Ivan},
+  title = {Analyzing Multi-Head Self-Attention: Specialized Heads do the Heavy Lifting, the Rest can be Pruned},
+  journal = {arXiv preprint arXiv:1905.09418},
+  year = {2019}
+}
+
+@article{michel2019sixteen,
+  author = {Michel, Paul and Levy, Omer and Neubig, Graham},
+  title = {Are Sixteen Heads Really Better than One?},
+  booktitle = {Advances in Neural Information Processing Systems},
+  volume = {32},
+  year = {2019}
+}
+
+%% ===== Language-Specific and Domain-Specific Analysis =====
+
+@article{paul2023pre,
+  author = {Paul, Shounak and Mandal, Arpan and Goyal, Pawan and Ghosh, Saptarshi},
+  title = {Pre-trained Language Models for the Legal Domain: A Case Study on Indian Law},
+  booktitle = {Proceedings of the 19th International Conference on Artificial Intelligence and Law (ICAIL 2023)},
+  year = {2023}
+}
+
+@inproceedings{ryu2023retrieval,
+  author = {Ryu, Cheol and Lee, Seolhwa and Pang, Subeen and Choi, Chanyeol and Choi, Hojun and Min, Myeonggee and Sohn, Jy-Yong},
+  title = {Retrieval-based Evaluation for LLMs: A Case Study in Korean Legal QA},
+  booktitle = {Proceedings of the Natural Legal Language Processing Workshop 2023},
+  pages = {132--137},
+  year = {2023},
+  address = {Singapore}
+}
+
+@article{moslem2023adaptive,
+  author = {Moslem, Yasmin and Haque, Rejwanul and Kelleher, John D. and Way, Andy},
+  title = {Adaptive Machine Translation with Large Language Models},
+  journal = {arXiv preprint arXiv:2308.15077},
+  year = {2023}
+}
+
+%% ===== Language Models and Transfer Learning =====
+
+@inproceedings{reiners2019sentence,
+  author = {Reimers, Nils and Gurevych, Iryna},
+  title = {Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks},
+  booktitle = {Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing},
+  year = {2019}
+}
+
+@article{gao2024retrieval,
+  author = {Gao, Yunfan and Xiong, Yun and Gao, Xinyu and Jia, Kangxiang and Pan, Jinliu and Bi, Yuxi and Dai, Yi and Sun, Jiawei and Wang, Meng and Wang, Haofen},
+  title = {Retrieval-Augmented Generation for Large Language Models: A Survey},
+  journal = {arXiv preprint arXiv:2312.10997},
+  year = {2024}
+}
+
+@article{grattafiori2024llama,
+  author = {Grattafiori, Aaron and Dubey, Abhimanyu and Jauhri, Abhinav and Pandey, Abhinav and Kadian, Abhishek and Al-Dahle, Ahmad and Letman, Aiesha and Mathur, Akhil and Schelt, Alan and others},
+  title = {The Llama 3 Herd of Models},
+  journal = {arXiv preprint arXiv:2407.21783},
+  year = {2024}
+}
+
+@article{touvron2023llama,
+  author = {Touvron, Hugo and Lavril, Thibaut and Izacard, Gautier and others},
+  title = {Llama: Open and Efficient Foundation Language Models},
+  journal = {arXiv preprint arXiv:2302.13971},
+  year = {2023}
+}
+
+@article{openai2024gpt4,
+  author = {{OpenAI} and Achiam, Josh and Adler, Steven and Agarwal, Sandhini and Ahmad, Lama and Akkaya, Ilge and Aleman, Florencia Leoni and others},
+  title = {GPT-4 Technical Report},
+  journal = {arXiv preprint arXiv:2303.08774},
+  year = {2024}
+}
+
+%% ===== Fine-tuning and Parameter-Efficient Adaptation =====
+
+@article{hu2021lora,
+  author = {Hu, Edward J. and others},
+  title = {LoRA: Low-Rank Adaptation of Large Language Models},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year = {2021}
+}
+
+@article{dettmers2023qlora,
+  author = {Dettmers, Tim and others},
+  title = {QLoRA: Efficient Fine-Tuning of Quantized LLMs},
+  journal = {arXiv preprint arXiv:2305.14314},
+  year = {2023}
+}
+
+%% ===== Evaluation and Benchmarking =====
+
+@inproceedings{lin2004rouge,
+  author = {Lin, Chin-Yew},
+  title = {ROUGE: A Package for Automatic Evaluation of Summaries},
+  booktitle = {Proceedings of the ACL Workshop on Text Summarization Branches Out},
+  year = {2004}
+}
+
+@inproceedings{zhang2019bertscore,
+  author = {Zhang, Tianyi and Kishore, Varsha and Wu, Felix and Weinberger, Kilian Q. and Artzi, Yoav},
+  title = {BERTScore: Evaluating Text Generation with BERT},
+  journal = {arXiv preprint arXiv:1904.09675},
+  year = {2019}
+}
+
+%% ===== Comprehensive Surveys =====
+
+@article{zhao2023survey,
+  author = {Zhao, Wayne Xin and Zhou, Kun and Li, Junran and Tang, Tianyi and Wang, Xiaolei and Hou, Yupeng and Min, Yingqian and Zhang, Beichen and Zhang, Junjie and Dong, Zican and others},
+  title = {A Survey of Large Language Models},
+  journal = {arXiv preprint arXiv:2303.18223},
+  year = {2023}
+}
+
+%% ===== Ethical and Environmental Considerations =====
+
+@article{strubell2019energy,
+  author = {Strubell, Emma and Ganesh, Ananya and McCallum, Andrew},
+  title = {Energy and Policy Considerations for Deep Learning in NLP},
+  journal = {arXiv preprint arXiv:1906.02243},
+  year = {2019}
+}
+
+@article{patterson2021carbon,
+  author = {Patterson, David and Gonzalez, Joseph and Le, Quoc and Liang, Chen and Munguia, Lluis-Miquel and Rothchild, Daniel and So, David and Texier, Maud and Dean, Jeff},
+  title = {Carbon Emissions and Large Neural Network Training},
+  journal = {arXiv preprint arXiv:2104.10350},
+  year = {2021}
+}
+
+@inproceedings{paudel2024optimizing,
+  author = {Paudel, Prabin and Khadka, Supriya and G.C., Ranju and Shah, Rahul},
+  title = {Optimizing Nepali PDF Extraction: A Comparative Study of Parser and OCR Technologies},
+  journal = {arXiv preprint arXiv:2407.04577},
+  year = {2024}
+}
+

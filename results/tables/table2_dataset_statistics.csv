@@ -1,0 +1,9 @@
+Statistic,Value
+Total Pairs,5024
+Train / Val / Test,4019 / 502 / 503
+Avg English Length,34.03
+Avg Nepali Length,24.86
+Max English Length,721
+Max Nepali Length,537
+Min English Length,1
+Min Nepali Length,1

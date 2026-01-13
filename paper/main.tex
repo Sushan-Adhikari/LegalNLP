@@ -1,0 +1,718 @@
+%%
+%% This is file `paper_legal_mt_nepali.tex',
+%% Modified from ACM sample-sigconf-authordraft.tex
+%%
+%% The original source files were:
+%%
+%% samples.dtx  (with options: `all,proceedings,bibtex,authordraft')
+%% 
+%% IMPORTANT NOTICE:
+%% 
+%% For the copyright see the source file.
+%% 
+%% Any modified versions of this file must be renamed
+%% with new filenames distinct from paper_legal_mt_nepali.tex.
+%% 
+%% For distribution of the original source see the terms
+%% for copying and modification in the file samples.dtx.
+%% 
+%% This generated file may be distributed as long as the
+%% original source files, as listed above, are part of the
+%% same distribution. (The sources need not necessarily be
+%% in the same archive or directory.)
+%%
+%%
+%% Commands for TeXCount
+%TC:macro \cite [option:text,text]
+%TC:macro \citep [option:text,text]
+%TC:macro \citet [option:text,text]
+%TC:envir table 0 1
+%TC:envir table* 0 1
+%TC:envir tabular [ignore] word
+%TC:envir displaymath 0 word
+%TC:envir math 0 word
+%TC:envir comment 0 0
+%%
+%% The first command in your LaTeX source must be the \documentclass
+%% command.
+%%
+%% For submission and review of your manuscript please change the
+%% command to \documentclass[manuscript, screen, review]{acmart}.
+%%
+%% When submitting camera ready or to TAPS, please change the command
+%% to \documentclass[sigconf]{acmart} or whichever template is required
+%% for your publication.
+%%
+%%
+\documentclass[manuscript, screen, review]{acmart}
+
+%%
+%% \BibTeX command to typeset BibTeX logo in the docs
+\AtBeginDocument{%
+  \providecommand\BibTeX{{%
+    Bib\TeX}}}
+
+%% Rights management information.  This information is sent to you
+%% when you complete the rights form.  These commands have SAMPLE
+%% values in them; it is your responsibility as an author to replace
+%% the commands and values with those provided to you when you
+%% complete the rights form.
+\setcopyright{acmlicensed}
+\copyrightyear{2025}
+\acmYear{2025}
+\acmDOI{XXXXXXX.XXXXXXX}
+
+%% These commands are for a PROCEEDINGS abstract or paper.
+\acmConference[ICAIL '25]{Twentieth International Conference on Artificial Intelligence and Law}{June 23--27, 2025}{Boston, MA, USA}
+
+%%
+%%  Uncomment \acmBooktitle if the title of the proceedings is different
+%%  from ``Proceedings of ...''!
+%%
+%%\acmBooktitle{Proceedings of the Twentieth International Conference on Artificial Intelligence and Law}
+\acmPrice{15.00}
+\acmISBN{978-1-4503-XXXX-X/25/06}
+
+%%
+%% Submission ID.
+%% Use this when submitting an article to a sponsored event. You'll
+%% receive a unique submission ID from the organizers
+%% of the event, and this ID should be used as the parameter to this command.
+\acmSubmissionID{XXX}
+
+%%
+%% For managing citations, it is recommended to use bibliography
+%% files in BibTeX format.
+%%
+%% You can then either use BibTeX with the ACM-Reference-Format style,
+%% or BibLaTeX with the acmnumeric or acmauthoryear sytles, that include
+%% support for advanced citation of software artefact from the
+%% biblatex-software package, also separately available on CTAN.
+%%
+%% Look at the sample-*-biblatex.tex files for templates showcasing
+%% the biblatex styles.
+%%
+
+%%
+%% The majority of ACM publications use numbered citations and
+%% references.  The command \citestyle{authoryear} switches to the
+%% "author year" style.
+%%
+%% If you are preparing content for an event
+%% sponsored by ACM SIGGRAPH, you must use the "author year" style of
+%% citations and references.
+%% Uncommenting
+%% the next command will enable that style.
+%%\citestyle{acmauthoryear}
+
+%%
+%% end of the preamble, start of the body of the document source.
+\begin{document}
+
+%%
+%% The "title" command has an optional parameter,
+%% allowing the author to define a "short title" to be used in page headers.
+\title[Legal Domain Neural MT: Nepali-English]{Directional Asymmetry in Low-Resource Legal Machine Translation: A Nepali-English Case Study}
+
+%%
+%% The "author" command and its associated commands are used to define
+%% the authors and their affiliations.
+%% Of note is the shared affiliation of the first two authors, and the
+%% "authornote" and "authornotemark" commands
+%% used to denote shared contribution to the research.
+\author{Sushan Adhikari}
+\email{sushan.adhikari2060@gmail.com}
+\affiliation{%
+  \institution{Department of Computer Science and Engineering}
+  \institution{Kathmandu University}
+  \city{Dhulikhel}
+  \country{Nepal}}
+
+\author{Sunidhi Sharma}
+\email{sunidhisharma3002@gmail.com}
+\affiliation{%
+  \institution{Department of Computer Science and Engineering}
+  \institution{Kathmandu University}
+  \city{Dhulikhel}
+  \country{Nepal}}
+
+\author{Darshan Lamichhane}
+\email{darshanlamichhane012@gmail.com}
+\affiliation{%
+  \institution{Department of Computer Science and Engineering}
+  \institution{Kathmandu University}
+  \city{Dhulikhel}
+  \country{Nepal}}
+
+\author{Rajani Chulyadyo}
+\email{rajani.chulyadyo@ku.edu.np}
+\affiliation{%
+  \institution{Department of Computer Science and Engineering}
+  \institution{Kathmandu University}
+  \city{Dhulikhel}
+  \country{Nepal}}
+
+\author{Bal Krishna Bal}
+\email{bal@ku.edu.np}
+\affiliation{%
+  \institution{Department of Computer Science and Engineering}
+  \institution{Kathmandu University}
+  \city{Dhulikhel}
+  \country{Nepal}}
+
+%%
+%% By default, the full list of authors will be used in the page
+%% headers. Often, this list is too long, and will overlap
+%% other information printed in the page headers. This command allows
+%% the author to define a more concise list
+%% of authors' names for this purpose.
+\renewcommand{\shortauthors}{Adhikari et al.}
+
+%%
+%% The abstract is a short summary of the work to be presented in the
+%% article.
+\begin{abstract}
+Legal machine translation for low-resource language pairs faces dual challenges: extreme data scarcity and domain-specific requirements for terminological precision. We present the first systematic study of Nepali-English legal translation using multilingual pre-trained models (mBART-50 and NLLB-200) fine-tuned on a novel corpus of 5,024 sentence pairs extracted from authoritative legal documents. Our key contribution is the empirical demonstration of directional asymmetry in bidirectional training: while both models improve Nepali$\rightarrow$English translation by approximately 5 BLEU points under joint training, mBART-50 suffers a 6.3 BLEU point degradation in English$\rightarrow$Nepali, whereas NLLB-200 shows resilience with slight improvement. We hypothesize this divergence stems from morphological complexity asymmetry—Nepali's rich inflectional system makes it a harder translation target, amplifying representational interference in bidirectional training for architecture-sensitive models. Our findings challenge the conventional wisdom that bidirectional training universally benefits multilingual MT, particularly for morphologically asymmetric legal language pairs. We release the first publicly available Nepali-English legal parallel corpus and reproduction code to enable future research.
+\end{abstract}
+
+%%
+%% The code below is generated by the tool at http://dl.acm.org/ccs.cfm.
+%% Please copy and paste the code instead of the example below.
+%%
+\begin{CCSXML}
+<ccs2012>
+ <concept>
+  <concept_id>10010147.10010178.10010179</concept_id>
+  <concept_desc>Computing methodologies~Natural language processing</concept_desc>
+  <concept_significance>500</concept_significance>
+ </concept>
+ <concept>
+  <concept_id>10010147.10010178.10010179.10010181</concept_id>
+  <concept_desc>Computing methodologies~Machine translation</concept_desc>
+  <concept_significance>500</concept_significance>
+ </concept>
+</ccs2012>
+\end{CCSXML}
+
+\ccsdesc[500]{Computing methodologies~Natural language processing}
+\ccsdesc[500]{Computing methodologies~Machine translation}
+
+%%
+%% Keywords. The author(s) should pick words that accurately describe
+%% the work being presented. Separate the keywords with commas.
+\keywords{legal machine translation, low-resource NLP, Nepali language, multilingual models, bidirectional training, directional asymmetry, morphological complexity}
+
+%% A "teaser" image appears between the author and affiliation
+%% information and the body of the document, and typically spans the
+%% page.
+%% Uncomment and add your teaser figure if desired
+% \begin{teaserfigure}
+%   \includegraphics[width=\textwidth]{figures/img}
+%   \caption{Overview of directional asymmetry in legal MT}
+%   \Description{Comparison of translation quality across different model configurations}
+%   \label{fig:teaser}
+% \end{teaserfigure}
+
+%%
+%% This command processes the author and affiliation and title
+%% information and builds the first part of the formatted document.
+\maketitle
+
+\section{Introduction}
+\label{sec:intro}
+
+Legal translation is fundamental to cross-border legal practice, international treaties, and access to justice in multilingual societies. Yet machine translation (MT) for legal texts in low-resource languages remains severely under-explored, despite critical societal implications. Nepal's legal system exemplifies this challenge: while foundational documents like the Constitution of Nepal (2015) and the Muluki Ain (civil and criminal code) exist in parallel Nepali-English versions, no computational resources support automated legal translation between these languages.
+
+The advent of multilingual pre-trained models like mBART~\cite{liu2020multilingual} and NLLB~\cite{nllb2022} has democratized MT for hundreds of languages, including Nepali. However, their effectiveness for domain-specific legal translation—requiring preservation of normative force, terminological consistency, and complex clause structures—remains empirically unvalidated for morphologically rich, low-resource language pairs.
+
+A central design choice in fine-tuning multilingual models is training direction: \textit{unidirectional} (separate models for each translation direction) versus \textit{bidirectional} (single model trained on both directions). Conventional wisdom in MT suggests bidirectional training improves parameter efficiency and leverages cross-lingual regularization~\cite{johnson2017google}. Yet for legal translation with morphological asymmetry (e.g., English's analytic structure versus Nepali's agglutinative morphology), this assumption is untested.
+
+\subsection{Research Questions}
+\label{subsec:rq}
+
+This paper addresses three core questions:
+
+\begin{enumerate}
+\item \textbf{Low-resource feasibility:} Can multilingual pre-trained models achieve usable legal MT quality with less than 6K sentence pairs?
+
+\item \textbf{Directional effects:} How does bidirectional training affect translation quality in morphologically asymmetric legal language pairs?
+
+\item \textbf{Model robustness:} Do architectural differences between mBART-50 and NLLB-200 manifest in differential sensitivity to training configuration?
+\end{enumerate}
+
+\subsection{Contributions}
+\label{subsec:contrib}
+
+We make the following novel contributions:
+
+\begin{itemize}
+\item \textbf{Dataset:} The first publicly available Nepali-English legal parallel corpus (5,024 pairs), extracted from authoritative legal documents with expert validation.
+
+\item \textbf{Empirical finding:} Directional asymmetry in bidirectional training—mBART-50 shows 6.3 BLEU degradation in EN$\rightarrow$NE under joint training, while NLLB-200 improves both directions.
+
+\item \textbf{Methodological insight:} Morphological complexity of the target language amplifies representational interference in bidirectional training for architecture-sensitive models.
+
+\item \textbf{Reproduction artifacts:} Complete code, data, and trained models released for reproducibility and future research.
+\end{itemize}
+
+\section{Related Work}
+\label{sec:related}
+
+\subsection{Legal Machine Translation}
+\label{subsec:legal_mt}
+
+Legal MT has primarily focused on high-resource European language pairs~\cite{koehn2017six}, with specialized systems for EU law~\cite{barreiro2013eur} and bilingual legal corpora like JRC-Acquis~\cite{steinberger2006jrc}. Recent work on legal domain adaptation~\cite{chalkidis2021legal} demonstrates the importance of in-domain training data. Furthermore, practical applications in the Swiss legal domain highlight the effectiveness of customized systems~\cite{martinez2020customized}. However, no prior work addresses Nepali legal translation, and research on low-resource legal MT remains sparse.
+
+\subsection{Low-Resource Multilingual MT}
+\label{subsec:low_resource_mt}
+
+Multilingual pre-trained models have enabled MT for hundreds of languages~\cite{liu2020multilingual,nllb2022}. For Nepali specifically, prior work on general-domain MT~\cite{khatri2020nepali, acharya2018comparative} reports BLEU scores in the 15--25 range for news translation. Our legal domain results significantly exceed these baselines, suggesting domain-specific fine-tuning is crucial. Additional corpora work includes augmented parallel resources~\cite{duwal2019efforts} and continued efforts in morphologically complex pairs~\cite{chaudhary2020efforts}.
+
+\subsection{Bidirectional Training}
+\label{subsec:bidirectional}
+
+Google's multilingual NMT system~\cite{johnson2017google} demonstrated bidirectional training benefits for general-domain translation. However, recent work on specialized domains~\cite{muller2020domain} suggests task-specific effects. To our knowledge, no prior work systematically compares unidirectional versus bidirectional training for legal MT in morphologically asymmetric pairs.
+
+\subsection{Nepali NLP and Language Resources}
+\label{subsec:nepali_nlp}
+
+Nepali NLP resources remain limited, with most work on POS tagging~\cite{bal2018morphological}, named entity recognition, and linguistic structure~\cite{bal2004structure}. Recent transformer-based models include NepBERTa~\cite{timilsina2022nepberta} and Nepali encoder transformers~\cite{maskey2022nepali}. Related bidirectional MT work exists~\cite{poudel2024bidirectional} and domain-adaptive learning~\cite{duwal2024domain}, but no legal corpus or comprehensive MT evaluation precedes this work. The foundational FLORES dataset includes Nepali--English~\cite{guzman2019flores}, validating the importance of this language pair.
+
+\section{Corpus Construction}
+\label{sec:corpus}
+
+\subsection{Source Documents and Legal Coverage}
+\label{subsec:source_docs}
+
+We extracted parallel sentences from three authoritative sources:
+
+\begin{itemize}
+\item \textbf{Constitution of Nepal (2015):} Foundational constitutional provisions on rights, state structure, and governance
+
+\item \textbf{Muluki Ain (Civil and Criminal Code):} Core statutory law governing civil obligations and criminal offenses
+
+\item \textbf{Regulatory statutes:} Specialized laws on commerce, taxation, and administrative procedure
+\end{itemize}
+
+These sources provide comprehensive coverage of legal language, including constitutional provisions, statutory definitions, procedural rules, and normative obligations—representative of real-world legal translation needs in the Nepali-English context.
+
+%% Figure placeholder - Corpus construction pipeline
+% \begin{figure}[h]
+%   \centering
+%   \includegraphics[width=\columnwidth]{figures/corpus_pipeline}
+%   \caption{Corpus construction and alignment pipeline showing OCR, segmentation, alignment, and quality control stages.}
+%   \Description{Flowchart showing the four-stage pipeline from source documents to final aligned corpus}
+%   \label{fig:corpus_pipeline}
+% \end{figure}
+
+\subsection{Extraction and Alignment Pipeline}
+\label{subsec:extraction}
+
+Our corpus construction involved four stages:
+
+\begin{enumerate}
+\item \textbf{OCR and digitization:} Official PDF documents were processed using optical character recognition optimized for Devanagari script. OCR accuracy was manually verified by law students.
+
+\item \textbf{Sentence segmentation:} Legal texts exhibit complex clause structures (multiple subclauses, parenthetical definitions, cross-references). We employed rule-based segmentation preserving legal structural units.
+
+\item \textbf{Semi-automatic alignment:} Initial alignment used sentence length heuristics and cognate matching (e.g., proper nouns, dates). All alignments were manually verified by bilingual law students.
+
+\item \textbf{Quality control:} Expert review by practicing lawyers ensured preservation of legal semantic equivalence and terminological consistency.
+\end{enumerate}
+
+\subsection{Dataset Statistics}
+\label{subsec:dataset_stats}
+
+The final corpus comprises 5,024 sentence pairs with statistics presented in Table~\ref{tab:dataset_stats}. The dataset exhibits typical characteristics of legal language: longer sentences than general-domain text (34 words per sentence in English, 25 in Nepali), with higher variance due to complex statutory provisions and constitutional clauses.
+
+%% Table captions are placed {\itshape above} the table.
+\begin{table}[h]
+  \caption{Corpus statistics for Nepali-English legal parallel corpus}
+  \label{tab:dataset_stats}
+  \begin{tabular}{lc}
+    \toprule
+    \textbf{Statistic} & \textbf{Value} \\
+    \midrule
+    Total sentence pairs & 5,024 \\
+    Train / Dev / Test split & 4,019 / 502 / 503 \\
+    Avg. English sentence length & 34.03 words \\
+    Avg. Nepali sentence length & 24.86 words \\
+    Max English sentence length & 721 words \\
+    Max Nepali sentence length & 537 words \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\subsection{Data Release}
+\label{subsec:data_release}
+
+To enable reproducible research, we will publicly release upon acceptance:
+
+\begin{itemize}
+\item Complete parallel corpus with train/dev/test splits
+\item OCR pipeline and alignment scripts with documentation
+\item Quality control guidelines and annotation protocols
+\item All trained model checkpoints and inference code
+\end{itemize}
+
+\section{Experimental Setup}
+\label{sec:experimental}
+
+\subsection{Model Selection}
+\label{subsec:models}
+
+We compare two state-of-the-art multilingual pre-trained models:
+
+\begin{itemize}
+\item \textbf{mBART-50}~\cite{liu2020multilingual}: 610M parameters, trained on 50 languages including Nepali, uses sequence-to-sequence transformer architecture with language-specific embeddings.
+
+\item \textbf{NLLB-200}~\cite{nllb2022}: 615M parameters (distilled variant), trained on 200 languages, employs conditional generation with forced decoder start tokens.
+\end{itemize}
+
+Both models support Nepali and have been used for general-domain translation~\cite{khatri2020nepali}, but neither has been evaluated on legal text prior to this work.
+
+\subsection{Training Configurations}
+\label{subsec:configs}
+
+We evaluate three configurations per model:
+
+\begin{enumerate}
+\item \textbf{Unidirectional NE$\rightarrow$EN:} Separate model trained only on Nepali-to-English translation
+
+\item \textbf{Unidirectional EN$\rightarrow$NE:} Separate model trained only on English-to-Nepali translation
+
+\item \textbf{Bidirectional:} Single model trained jointly on both directions (data augmented to 8,038 pairs by including both directions)
+\end{enumerate}
+
+This yields 6 models total (2 architectures $\times$ 3 configurations), evaluated on both translation directions (12 test runs).
+
+%% Figure placeholder - Training configurations diagram
+% \begin{figure}[h]
+%   \centering
+%   \includegraphics[width=\columnwidth]{figures/training_configs}
+%   \caption{Comparison of unidirectional vs. bidirectional training configurations.}
+%   \Description{Diagram showing three training setups: unidirectional NE to EN, unidirectional EN to NE, and bidirectional}
+%   \label{fig:training_configs}
+% \end{figure}
+
+\subsection{Hyperparameters}
+\label{subsec:hyperparams}
+
+All models use identical hyperparameters for fair comparison:
+
+\begin{itemize}
+\item Training epochs: 6
+\item Batch size: 4 (effective batch size 32 with gradient accumulation 8)
+\item Learning rate: 3$\times$10$^{-5}$ with 200-step warmup
+\item Max sequence length: 128 tokens
+\item Optimizer: AdamW (mBART) / Adafactor (NLLB)
+\item Early stopping patience: 3 epochs on validation loss
+\end{itemize}
+
+\subsection{Implementation Details}
+\label{subsec:implementation}
+
+\textbf{mBART-50:} Fine-tuned using HuggingFace Seq2SeqTrainer with standard data collation and forced BOS tokens for target language.
+
+\textbf{NLLB-200:} Due to known compatibility issues with Seq2SeqTrainer, we implemented manual training loops with Adafactor optimizer, matching the approach in successful NLLB fine-tuning literature.
+
+All training performed on NVIDIA A100 (40GB) GPUs. Training time: approximately 2 hours per unidirectional model, 3 hours for bidirectional models.
+
+\subsection{Evaluation Metrics}
+\label{subsec:metrics}
+
+We report three automatic metrics:
+
+\begin{itemize}
+\item \textbf{BLEU}~\cite{papineni2002bleu}: Primary metric for MT quality, measures n-gram precision
+
+\item \textbf{chrF++}~\cite{popovic2015chrf}: Character-level metric robust to morphological variations
+
+\item \textbf{Length ratio:} Hypothesis/reference length ratio (ideal: 1.0)
+\end{itemize}
+
+All metrics computed using SacreBLEU~\cite{post2018call} for reproducibility and standardization.
+
+\section{Results}
+\label{sec:results}
+
+\subsection{Main Results}
+\label{subsec:main_results}
+
+Table~\ref{tab:main_results} presents comprehensive evaluation results across all model configurations. The key observation is directional asymmetry: mBART-50's performance diverges sharply between directions under bidirectional training, while NLLB-200 shows more balanced results.
+
+%% To set a wider table, which takes up the whole width of the page's
+%% live area, use the environment \textbf{table*} to enclose the table's
+%% contents and the table caption.  As with a single-column table, this
+%% wide table will ``float'' to a location deemed more desirable.
+\begin{table*}[t]
+  \caption{Translation quality across models and configurations. Best scores per direction bolded.}
+  \label{tab:main_results}
+  \begin{tabular}{llcccc}
+    \toprule
+    \textbf{Model} & \textbf{Configuration} & \textbf{Direction} & \textbf{BLEU} & \textbf{chrF++} & \textbf{Length Ratio} \\
+    \midrule
+    mBART-50 & Unidirectional & NE$\rightarrow$EN & 49.05 & 64.51 & 0.929 \\
+    mBART-50 & Unidirectional & EN$\rightarrow$NE & \textbf{36.60} & 64.33 & 0.872 \\
+    mBART-50 & Bidirectional & NE$\rightarrow$EN & \textbf{53.97} & \textbf{66.23} & 0.918 \\
+    mBART-50 & Bidirectional & EN$\rightarrow$NE & 30.26 & 62.36 & 0.887 \\
+    \midrule
+    NLLB-200 & Unidirectional & NE$\rightarrow$EN & 46.51 & 61.35 & 0.929 \\
+    NLLB-200 & Unidirectional & EN$\rightarrow$NE & 25.71 & 60.72 & 0.901 \\
+    NLLB-200 & Bidirectional & NE$\rightarrow$EN & 51.44 & 60.73 & 0.932 \\
+    NLLB-200 & Bidirectional & EN$\rightarrow$NE & 27.19 & 62.20 & 0.889 \\
+    \bottomrule
+  \end{tabular}
+\end{table*}
+
+%% Figure placeholder - BLEU score comparison chart
+% \begin{figure}[h]
+%   \centering
+%   \includegraphics[width=\columnwidth]{figures/bleu_comparison}
+%   \caption{BLEU scores across models and training configurations. Note the asymmetric effect of bidirectional training on mBART-50.}
+%   \Description{Bar chart comparing BLEU scores for mBART-50 and NLLB-200 in both directions under unidirectional and bidirectional training}
+%   \label{fig:bleu_comparison}
+% \end{figure}
+
+\subsection{Bidirectional Training Effects}
+\label{subsec:bidir_effects}
+
+\textbf{mBART-50:}
+
+\begin{itemize}
+\item NE$\rightarrow$EN: Bidirectional improves by +4.92 BLEU (49.05$\rightarrow$53.97)
+\item EN$\rightarrow$NE: Bidirectional degrades by -6.34 BLEU (36.60$\rightarrow$30.26)
+\item Net effect: Asymmetric—helps source-rich direction, hurts target-complex direction
+\end{itemize}
+
+\textbf{NLLB-200:}
+
+\begin{itemize}
+\item NE$\rightarrow$EN: Bidirectional improves by +4.93 BLEU (46.51$\rightarrow$51.44)
+\item EN$\rightarrow$NE: Bidirectional improves by +1.48 BLEU (25.71$\rightarrow$27.19)
+\item Net effect: Symmetric—helps both directions, though unevenly
+\end{itemize}
+
+\subsection{Model Comparison}
+\label{subsec:model_comp}
+
+\textbf{NE$\rightarrow$EN (Nepali to English):}
+
+\begin{itemize}
+\item Best: mBART Bidirectional (53.97 BLEU)
+\item Bidirectional training benefits both models substantially ($+$4.9 BLEU)
+\item mBART outperforms NLLB by approximately 2.5 BLEU in this direction
+\end{itemize}
+
+\textbf{EN$\rightarrow$NE (English to Nepali):}
+
+\begin{itemize}
+\item Best: mBART Unidirectional (36.60 BLEU)
+\item mBART significantly outperforms NLLB (approximately 11 BLEU gap in unidirectional)
+\item Bidirectional training harmful for mBART, slightly helpful for NLLB
+\end{itemize}
+
+\subsection{Translation Quality Analysis}
+\label{subsec:quality_analysis}
+
+All models achieve length ratios near 1.0 (range: 0.87--0.93), indicating appropriate output length. The chrF++ scores (60--66) are consistent with morphologically rich language translation, where character-level metrics better capture partial matches than word-level BLEU.
+
+Notably, NE$\rightarrow$EN achieves substantially higher BLEU scores than EN$\rightarrow$NE across all configurations (49--54 vs. 25--37), reflecting the inherent difficulty of generating morphologically complex Nepali text. This performance gap is the origin of our hypothesis regarding morphological asymmetry effects.
+
+\section{Discussion}
+\label{sec:discussion}
+
+\subsection{Why Bidirectional Training Fails for mBART}
+\label{subsec:why_mbart_fails}
+
+We hypothesize three interacting factors explain mBART's bidirectional degradation:
+
+\begin{enumerate}
+\item \textbf{Morphological asymmetry:} Nepali's agglutinative morphology (case markers, verb conjugations, agreement systems) creates a harder generation target than English. Bidirectional training forces the model to learn both analytic (English) and synthetic (Nepali) generation in shared parameters, creating optimization conflicts.
+
+\item \textbf{Representational interference:} The shared encoder may develop representations optimized for NE$\rightarrow$EN (the higher-resource, easier direction in terms of perplexity), degrading EN$\rightarrow$NE performance where decoder must generate complex Nepali morphology. This interference is architecture-specific.
+
+\item \textbf{Training dynamics:} Legal terminology often requires exact translations (e.g., ``shall'' $\rightarrow$ ``गर्नु पर्छ''). Bidirectional training may prioritize frequent patterns from the easier direction, neglecting rarer EN$\rightarrow$NE lexical mappings and grammatical structures.
+\end{enumerate}
+
+%% Figure placeholder - Interference visualization
+% \begin{figure}[h]
+%   \centering
+%   \includegraphics[width=\columnwidth]{figures/interference}
+%   \caption{Visualization of representational interference in bidirectional training. Encoder representations optimized for NE$\rightarrow$EN may degrade EN$\rightarrow$NE performance.}
+%   \Description{Diagram showing shared encoder representations and their differential impact on two translation directions}
+%   \label{fig:interference}
+% \end{figure}
+
+\subsection{NLLB's Robustness to Bidirectional Training}
+\label{subsec:nllb_robustness}
+
+NLLB-200 shows resilience to these issues, improving both directions under bidirectional training. We attribute this to:
+
+\begin{enumerate}
+\item \textbf{Architectural design:} NLLB's conditional generation with forced decoder start tokens and different parameter sharing may better isolate directional representations, reducing interference.
+
+\item \textbf{Pre-training scale:} Trained on 200 languages (vs. mBART's 50), NLLB may have learned more robust cross-lingual transfer mechanisms and better initialization for low-resource fine-tuning.
+
+\item \textbf{Training methodology:} NLLB's curriculum emphasizes multilingual diversity over language pairs, potentially making it less susceptible to directional interference in fine-tuning.
+\end{enumerate}
+
+\subsection{Implications for Legal MT Practitioners}
+\label{subsec:implications}
+
+Our findings suggest:
+
+\begin{itemize}
+\item For morphologically asymmetric pairs, unidirectional fine-tuning may be preferable despite higher resource costs
+
+\item Model selection matters: NLLB-200 preferred for bidirectional legal MT; mBART-50 preferred if unidirectional EN$\rightarrow$NE is critical
+
+\item Quality requirements should guide configuration: if EN$\rightarrow$NE quality is paramount, avoid bidirectional mBART
+\end{itemize}
+
+\subsection{Broader Impact on Access to Justice}
+\label{subsec:broader_impact}
+
+High-quality legal translation enables:
+
+\begin{itemize}
+\item Non-English speakers to access Nepali legal resources
+
+\item International organizations and NGOs to understand Nepali law without human translators
+
+\item Legal professionals to work with bilingual documents efficiently
+\end{itemize}
+
+However, automated legal translation risks:
+
+\begin{itemize}
+\item Mistranslations affecting legal interpretation and enforcement
+
+\item Over-reliance on imperfect systems in critical contexts
+
+\item Reduced demand for professional human translators in certain contexts
+\end{itemize}
+
+We emphasize that current MT systems (including ours) require expert post-editing for legally binding contexts, and should not replace human translators in high-stakes legal proceedings.
+
+\section{Limitations and Future Work}
+\label{sec:limitations}
+
+\subsection{Current Limitations}
+\label{subsec:current_limitations}
+
+\begin{itemize}
+\item \textbf{Corpus size:} 5K pairs is small by MT standards; larger corpora would improve quality and statistical robustness
+
+\item \textbf{Domain coverage:} Limited to constitutional and statutory law; case law, contracts, and administrative decisions not included
+
+\item \textbf{Evaluation:} No human evaluation by legal experts; automatic metrics imperfect for legal translation quality
+
+\item \textbf{Architectural coverage:} Only two model families tested; newer large language models (GPT-4, Claude) not evaluated
+\end{itemize}
+
+\subsection{Future Directions}
+\label{subsec:future_work}
+
+\begin{itemize}
+\item \textbf{Corpus expansion:} Include Supreme Court judgments, legal contracts, administrative regulations, and international treaties
+
+\item \textbf{Zero-shot LLM evaluation:} Compare against GPT-4 and Claude for legal translation quality
+
+\item \textbf{Document-level context:} Move beyond sentence-level to preserve cross-sentence legal coherence and anaphora resolution
+
+\item \textbf{Terminology extraction:} Develop Nepali legal term databases for constrained decoding and term consistency
+
+\item \textbf{Human evaluation:} Partner with legal professionals for expert quality assessment and practical deployment evaluation
+\end{itemize}
+
+\section{Conclusion}
+\label{sec:conclusion}
+
+We presented the first systematic study of low-resource legal machine translation for Nepali-English, introducing a novel parallel corpus and demonstrating feasibility of domain-specific fine-tuning with fewer than 6K sentence pairs. Our key empirical contribution—directional asymmetry in bidirectional training—challenges conventional MT practices for morphologically asymmetric language pairs. While mBART-50 achieves the highest NE$\rightarrow$EN quality (53.97 BLEU), its bidirectional configuration suffers severe EN$\rightarrow$NE degradation. NLLB-200 proves more robust, improving both directions under joint training. These findings underscore the importance of architecture-aware training configuration in specialized domains.
+
+By releasing our corpus, trained models, and reproduction code, we enable future research on legal NLP for under-resourced languages and hope to facilitate access to justice through improved multilingual legal AI systems. The Nepali-English legal domain represents a critical test case for low-resource legal MT, with immediate applications to Nepal's multilingual legal system and broader implications for similar language pairs worldwide.
+
+\section*{Data Availability}
+\label{sec:data_availability}
+
+All experimental artifacts (dataset, code, trained models, hyperparameter logs) will be released publicly upon paper acceptance at: [URL to be added post-acceptance]. Pre-print datasets and code are deferred during review to preserve anonymity per ICAIL guidelines.
+
+%%
+%% The acknowledgments section is defined using the "acks" environment
+%% (and NOT an unnumbered section). This ensures the proper
+%% identification of the section in the article metadata, and the
+%% consistent spelling of the heading.
+\begin{acks}
+We acknowledge the law students and legal professionals from Kathmandu University and partner law firms who contributed to corpus annotation and quality verification. Special thanks to the NVIDIA Academic Partnership program for GPU access. This research was conducted at the Information and Language Processing Research Lab, Kathmandu University.
+\end{acks}
+
+%%
+%% The next two lines define the bibliography style to be used, and
+%% the bibliography file.
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{sample-base}
+
+%%
+%% If your work has an appendix, this is the place to put it.
+\appendix
+
+\section{Detailed Error Analysis}
+\label{app:error_analysis}
+
+%% Placeholder for detailed error analysis with example translations
+%% You can add tables or figures showing specific translation errors here
+% \begin{table}[h]
+%   \caption{Example translation errors and their categorization}
+%   \label{tab:error_examples}
+%   \begin{tabular}{lll}
+%     \toprule
+%     \textbf{Error Type} & \textbf{Source} & \textbf{Translation} \\
+%     \midrule
+%     Morphological & ... & ... \\
+%     Terminological & ... & ... \\
+%     Syntactic & ... & ... \\
+%     \bottomrule
+%   \end{tabular}
+% \end{table}
+
+[To be completed with specific error examples from manual analysis]
+
+\section{Hyperparameter Sensitivity Analysis}
+\label{app:hyperparams}
+
+%% Placeholder for ablation studies on learning rate, batch size, and training epochs
+% \begin{figure}[h]
+%   \centering
+%   \includegraphics[width=\columnwidth]{figures/hyperparameter_sensitivity}
+%   \caption{Effect of learning rate and batch size on translation quality}
+%   \Description{Line plots showing BLEU scores across different hyperparameter configurations}
+%   \label{fig:hyperparam_sensitivity}
+% \end{figure}
+
+[To be completed with hyperparameter ablation results]
+
+\section{Additional Evaluation Metrics}
+\label{app:metrics}
+
+%% Placeholder for BERTScore and other advanced metrics
+% \begin{table}[h]
+%   \caption{Additional evaluation metrics including BERTScore and COMET}
+%   \label{tab:additional_metrics}
+%   \begin{tabular}{llcc}
+%     \toprule
+%     \textbf{Model} & \textbf{Direction} & \textbf{BERTScore} & \textbf{COMET} \\
+%     \midrule
+%     mBART-50 & NE$\rightarrow$EN & ... & ... \\
+%     mBART-50 & EN$\rightarrow$NE & ... & ... \\
+%     NLLB-200 & NE$\rightarrow$EN & ... & ... \\
+%     NLLB-200 & EN$\rightarrow$NE & ... & ... \\
+%     \bottomrule
+%   \end{tabular}
+% \end{table}
+
+[To be completed with semantic similarity and quality estimation metrics]
+
+\end{document}
+%%
+%% End of file `paper_legal_mt_nepali.tex'.

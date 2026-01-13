@@ -1,0 +1,58 @@
+{
+  "mbart_uni_ne_en": {
+    "model_type": "mbart",
+    "direction": "ne_en",
+    "bleu": 49.04598148520298,
+    "chrf++": 64.51218098220463,
+    "length_ratio": 0.9289056875449964
+  },
+  "mbart_uni_en_ne": {
+    "model_type": "mbart",
+    "direction": "en_ne",
+    "bleu": 36.59605919247233,
+    "chrf++": 64.3323387868211,
+    "length_ratio": 0.8721387840334109
+  },
+  "mbart_bi_ne_en": {
+    "model_type": "mbart",
+    "direction": "ne_en",
+    "bleu": 53.9677245377244,
+    "chrf++": 66.23047256758505,
+    "length_ratio": 0.9176265898728102
+  },
+  "mbart_bi_en_ne": {
+    "model_type": "mbart",
+    "direction": "en_ne",
+    "bleu": 30.264222622474968,
+    "chrf++": 62.36401314010911,
+    "length_ratio": 0.8867560838486868
+  },
+  "nllb_uni_ne_en": {
+    "model_type": "nllb",
+    "direction": "ne_en",
+    "bleu": 46.51099180482713,
+    "chrf++": 61.346052015878485,
+    "length_ratio": 0.9288456923446123
+  },
+  "nllb_uni_en_ne": {
+    "model_type": "nllb",
+    "direction": "en_ne",
+    "bleu": 25.70992089939137,
+    "chrf++": 60.721060577807286,
+    "length_ratio": 0.9012127539956629
+  },
+  "nllb_bi_ne_en": {
+    "model_type": "nllb",
+    "direction": "ne_en",
+    "bleu": 51.44199619687635,
+    "chrf++": 60.72656389509656,
+    "length_ratio": 0.9316654667626588
+  },
+  "nllb_bi_en_ne": {
+    "model_type": "nllb",
+    "direction": "en_ne",
+    "bleu": 27.19358774689947,
+    "chrf++": 62.20153668483579,
+    "length_ratio": 0.8894867882097822
+  }
+}

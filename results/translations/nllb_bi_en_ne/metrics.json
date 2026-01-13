@@ -1,0 +1,7 @@
+{
+  "model_type": "nllb",
+  "direction": "en_ne",
+  "bleu": 27.19358774689947,
+  "chrf++": 62.20153668483579,
+  "length_ratio": 0.8894867882097822
+}

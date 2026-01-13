@@ -1,0 +1,105 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+env/
+venv/
+ENV/
+.venv
+env.bak/
+venv.bak/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Model checkpoints (too large for GitHub)
+*.bin
+*.safetensors
+*.pt
+*.pth
+models/*/checkpoint-*/
+models/*/best_model/
+models/*/final_model/
+*.ckpt
+
+# Data files (too large - use external hosting)
+# Uncomment if dataset is too large
+# data/fileours.xlsx
+
+# Logs
+*.log
+logs/
+*.out
+
+# Temporary files
+*.swp
+*.swo
+*~
+.cache/
+
+# Downloaded models (HuggingFace cache)
+.cache/
+transformers/
+
+# Zip archives
+*.zip
+*.tar.gz
+*.tgz
+
+# LaTeX build files
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# IDE
+*.iml
+.project
+.classpath
+.settings/
+
+# OS generated
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+
+
+
