@@ -275,12 +275,11 @@ If you use this code or dataset in your research, please cite:
 
 ```bibtex
 @misc{legal_nlp_2025,
-  title={Neural Machine Translation for English-Nepali Legal Domain:
-         A Comparative Study of MBART and NLLB Models},
-  author={[Your Name]},
+  title={Directional Asymmetry in Low-Resource Legal Machine Translation: A Nepali-English Case Study},
+  author={[Sushan Adhikari, Sunidhi Sharma, Darshan Lamichhane, Rajani Chulyadyo, Bal Krishna Bal]},
   year={2025},
   publisher={GitHub},
-  howpublished={\\url{https://github.com/yourusername/Legal_NLP}}
+  howpublished={\\url{https://github.com/sushan-adhikari/LegalNLP}}
 }
 ```
 
@@ -300,7 +299,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 For questions, issues, or collaboration opportunities, please:
 
 - Open an issue on GitHub
-- Contact: [your.email@example.com]
+- Contact: [sushan.adhikari2060@gmail.com]
 
 ## References
 
